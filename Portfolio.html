@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Jameel Alsahlawi | Data Science &amp; Electrical Engineering</title>
+<meta name="description" content="Portfolio of Ali Jameel Alsahlawi, an Electrical Engineer specializing in Data Science and Predictive Modeling.">
+<meta property="og:title" content="Ali Jameel Alsahlawi | Data Science &amp; Electrical Engineering">
+<meta property="og:description" content="Electrical Engineer specializing in Data Science and Predictive Modeling, bridging hardware engineering with practical machine learning solutions.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5F8;--surface:#FFFFFF;--ink:#1E232B;--muted:#4A5568;--slate:#3B4B63;--line:#D3D9E2;--blue:#175CD3;--amber:#E8A317;--on-amber:#1E232B}
+:root[data-theme="dark"]{--bg:#161A20;--surface:#1E232B;--ink:#EDF0F5;--muted:#A9B4C4;--slate:#8FA3C0;--line:#344052;--blue:#5B9BFF;--amber:#F2B53A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{font:600 1.05rem Sora,sans-serif;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--amber)}
+.toggle{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.95rem;cursor:pointer}
+.toggle:hover{border-color:var(--blue)}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:700;letter-spacing:-.02em}
+.role{font:500 clamp(1.1rem,2.5vw,1.5rem) Sora,sans-serif;color:var(--slate);margin:12px 0 20px}
+.welcome{max-width:60ch;font-size:1.2rem;margin:0 0 28px}
+.btn{display:inline-block;background:var(--amber);color:var(--on-amber);font-weight:500;padding:12px 24px;border-radius:4px;text-decoration:none;border:2px solid var(--amber)}
+.btn:hover{background:transparent;color:var(--ink)}
+.signal{margin-top:48px;border-top:1px solid var(--line);padding-top:8px}
+.signal svg{display:block;width:100%;height:auto}
+.signal .cap{color:var(--muted);font-size:.95rem;margin:6px 0 0}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:28px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:48px}
+.about p{margin:0;max-width:65ch}
+.skills{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.skills li{border:1px solid var(--line);background:var(--surface);padding:4px 12px;border-radius:4px;font-size:.98rem}
+.proj{border-top:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:1fr 2fr;gap:12px 48px}
+.proj:last-child{border-bottom:1px solid var(--line)}
+.proj h3{font-size:1.3rem}
+.proj .tools{color:var(--slate);font-size:.98rem;margin:8px 0 0}
+.proj p{margin:0 0 12px}
+.more{background:none;border:0;padding:0;color:var(--blue);font:500 1rem "IBM Plex Sans",sans-serif;text-decoration:underline;cursor:pointer}
+.detail{margin-top:16px;padding-left:16px;border-left:3px solid var(--amber)}
+.detail[hidden]{display:none}
+.detail strong{font-weight:500}
+.timeline{list-style:none;margin:0;padding:0 0 0 24px;border-left:3px solid var(--blue)}
+.timeline li{position:relative;padding-bottom:32px}
+.timeline li::before{content:"";position:absolute;left:-33px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--amber);border:2px solid var(--bg)}
+.timeline h3{font-size:1.15rem}
+.timeline .meta{color:var(--muted);margin:2px 0 8px;font-size:.98rem}
+.timeline p{margin:0;max-width:70ch}
+.edu{list-style:none;margin:0;padding:0}
+.edu li{padding:12px 0;border-top:1px solid var(--line)}
+.edu li:last-child{border-bottom:1px solid var(--line)}
+.contact a{display:block;padding:6px 0;font-weight:500;overflow-wrap:anywhere}
+footer{padding:32px 0;color:var(--muted);font-size:.95rem}
+@media (max-width:768px){
+ .about,.proj{grid-template-columns:1fr}
+ .hero{padding:48px 0 40px}
+ section{padding:52px 0}
+ nav ul{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="#top">Ali Alsahlawi</a>
+  <nav aria-label="Main"><ul>
+   <li><a href="#about">About</a></li>
+   <li><a href="#projects">Projects</a></li>
+   <li><a href="#experience">Experience</a></li>
+   <li><a href="#education">Education</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <button class="toggle" id="theme" type="button" aria-pressed="false">Dark mode</button>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <h1>Ali Jameel Alsahlawi</h1>
+ <p class="role">Data Science / Electrical Engineer</p>
+ <p class="welcome">Welcome to my portfolio! I am an Electrical Engineer specializing in Data Science and Predictive Modeling, bridging hardware engineering with practical machine learning solutions.</p>
+ <a class="btn" href="#projects">View my work</a>
+ <div class="signal">
+  <svg id="sig" viewBox="0 0 1000 160" role="img" aria-label="Scattered data points settling onto a clean sine wave, representing a predictive model fitted to an electrical signal">
+   <line x1="0" y1="80" x2="1000" y2="80" stroke="var(--line)" stroke-width="1"/>
+   <path id="wave" d="" fill="none" stroke="var(--blue)" stroke-width="3" stroke-linecap="round"/>
+   <g id="dots" fill="var(--amber)"></g>
+  </svg>
+  <p class="cap">Noisy measurements settling onto a fitted signal: hardware data meets predictive modeling.</p>
+ </div>
+</div></div>
+
+<section id="about"><div class="wrap">
+ <h2>About me</h2>
+ <div class="about">
+  <p>An analytical and detail-oriented Electrical Engineer with specialized capabilities in Data Science, predictive modeling, and machine learning algorithms. Combines hands-on experience in electrical system diagnostics, circuit inspection, and single-line diagram analysis with practical expertise in Python, SQL, C++, and MATLAB to build end-to-end predictive models. Adept at leveraging machine learning for predictive maintenance, complex data transformation, and engineering problem-solving to optimize system performance within technology-driven and industrial sectors.</p>
+  <div>
+   <h3 style="font-size:1.1rem;margin-bottom:12px">Skills and tools</h3>
+   <ul class="skills">
+    <li>Python</li><li>C++</li><li>SQL</li><li>MATLAB</li><li>OpenCV</li><li>PyTorch/YOLO</li><li>Scikit-Learn</li><li>Streamlit</li><li>Arduino</li><li>AutoCAD</li><li>EAGLE</li><li>MULTISIM</li>
+   </ul>
+  </div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+
+ <article class="proj" id="olist">
+  <div><h3>Olist delivery time prediction</h3><p class="tools">Python, Machine Learning models (HistGradientBoosting)</p></div>
+  <div>
+   <p>Predicting order delivery time using machine learning to minimize prediction error.</p>
+   <button class="more" type="button" aria-expanded="false" aria-controls="d1">Read more</button>
+   <div class="detail" id="d1" hidden>
+    <p>We built our ML model that predicts the delivery time of the order depending on some factors, and we ended up with a model with low error.</p>
+    <p><strong>Tools:</strong> Python, Machine Learning models (HistGradientBoosting)</p>
+    <p><a href="https://github.com/Ayman-Saleh-ED/olist-delivery-time" target="_blank" rel="noopener">View on GitHub</a></p>
+   </div>
+  </div>
+ </article>
+
+ <article class="proj" id="currency">
+  <div><h3>Bahraini currency Detection</h3><p class="tools">Python, OpenCV, YOLO / PyTorch</p></div>
+  <div>
+   <p>Real-time computer vision system for detecting and calculating currency values from live camera feeds.</p>
+   <button class="more" type="button" aria-expanded="false" aria-controls="d2">Read more</button>
+   <div class="detail" id="d2" hidden>
+    <p>Real-time computer vision system where money is placed in front of a camera to detect and calculate the currency amount.</p>
+    <p><strong>Tools:</strong> Python, OpenCV, YOLO / PyTorch</p>
+    <p><a href="https://github.com/ali22j/DSB3/tree/master/Projects/Bahraini_Currency_Detection" target="_blank" rel="noopener">View on GitHub</a></p>
+   </div>
+  </div>
+ </article>
+
+ <article class="proj" id="weather">
+  <div><h3>Weather Tracker App</h3><p class="tools">Python, Streamlit, Predictive Modeling</p></div>
+  <div>
+   <p>Interactive Streamlit application for tracking, analyzing, and forecasting daily weather metrics.</p>
+   <button class="more" type="button" aria-expanded="false" aria-controls="d3">Read more</button>
+   <div class="detail" id="d3" hidden>
+    <p>Weather tracking Streamlit app where users enter weather data; the app analyzes and compares the data over time and predicts tomorrow's temperature.</p>
+    <p><strong>Tools:</strong> Python, Streamlit, Predictive Modeling</p>
+   </div>
+  </div>
+ </article>
+
+ <article class="proj" id="dcplug">
+  <div><h3>Smart DC/DC wall plug</h3><p class="tools">Arduino Uno, Buck/Boost Converter, Step-down Converters, Digital Potentiometer, Current/Voltage Sensors</p></div>
+  <div>
+   <p>Hardware prototype designed to extract power from a 24V DC bus with automated voltage adjustment for DC loads.</p>
+   <button class="more" type="button" aria-expanded="false" aria-controls="d4">Read more</button>
+   <div class="detail" id="d4" hidden>
+    <p>Designed a smart DC/DC wall plug for the DC House project to extract power from a 24V DC bus, using an Arduino Uno, digital potentiometer, and voltage/current sensors in a feedback loop to provide automatic voltage adjustment for DC loads.</p>
+    <p><strong>Tools:</strong> Arduino Uno, Buck/Boost Converter, Step-down Converters, Digital Potentiometer, Current/Voltage Sensors</p>
+   </div>
+  </div>
+ </article>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+ <ol class="timeline">
+  <li><h3>Data Science Bootcamp Student</h3><p class="meta">General Assembly &middot; Sep 2026 &ndash; Nov 2026</p><p>Developed ML models.</p></li>
+  <li><h3>Electrical Engineer Trainee</h3><p class="meta">Ministry of Works - Building Maintenance Directorate, Bahrain &middot; July 2024 &ndash; August 2024</p><p>Inspected government building facilities and created AutoCAD schematics for replacing outdated electrical components. Developed Bills of Quantities (BOQ) for electrical hardware to ensure accurate procurement and cost estimations. Supervised Distribution Board (DB) installations, main panels, and sub-panels while executing system safety verification tests. Constructed Single Line Diagrams (SLD) to standardize electrical architecture and documentation across public facilities.</p></li>
+  <li><h3>Senior Project Developer</h3><p class="meta">University of Bahrain, Bahrain &middot; 2023 &ndash; 2024</p><p>Architected and built a smart DC/DC wall plug prototype for DC houses, performing requirements analysis, PCB layout design, and prototyping. Selected circuit components, captured schematics using EAGLE and MULTISIM, and executed quantitative data analysis to validate hardware performance.</p></li>
+ </ol>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2>Education &amp; Certifications</h2>
+ <ul class="edu">
+  <li>B.Sc. in Electrical Engineering from University of Bahrain</li>
+  <li>General Assembly Data Science Bootcamp</li>
+  <li>Electrical Insulation Wireman License</li>
+ </ul>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+ <h2>Contact</h2>
+ <a href="mailto:ali22j2002@gmail.com">ali22j2002@gmail.com</a>
+ <a href="https://www.linkedin.com/in/ali-alsahlawi-32214a346/" target="_blank" rel="noopener">LinkedIn</a>
+ <a href="https://github.com/ali22j" target="_blank" rel="noopener">GitHub</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; Ali Jameel Alsahlawi</div></footer>
+
+<script>
+(function(){
+ var root=document.documentElement,btn=document.getElementById('theme');
+ function setTheme(t){root.setAttribute('data-theme',t);btn.textContent=t==='dark'?'Light mode':'Dark mode';btn.setAttribute('aria-pressed',t==='dark')}
+ var saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+ setTheme(saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+ btn.addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';setTheme(t);try{localStorage.setItem('theme',t)}catch(e){}});
+
+ document.querySelectorAll('.more').forEach(function(b){
+  b.addEventListener('click',function(){
+   var d=document.getElementById(b.getAttribute('aria-controls')),open=b.getAttribute('aria-expanded')==='true';
+   b.setAttribute('aria-expanded',!open);d.hidden=open;b.textContent=open?'Read more':'Show less';
+  });
+ });
+ function openHash(){var a=document.getElementById(location.hash.slice(1));if(a&&a.classList.contains('proj')){var b=a.querySelector('.more');if(b&&b.getAttribute('aria-expanded')==='false')b.click()}}
+ addEventListener('hashchange',openHash);openHash();
+
+ var W=1000,H=80,A=55,pts=[],N=46,i,x;
+ var d='M0 '+H;for(x=0;x<=W;x+=10)d+=' L'+x+' '+(H-A*Math.sin(x/1000*Math.PI*4)).toFixed(1);
+ document.getElementById('wave').setAttribute('d',d.replace('M0 '+H+' L','M'));
+ var g=document.getElementById('dots'),ns='http://www.w3.org/2000/svg',cs=[];
+ var rnd=function(s){var v=Math.sin(s*9301+49297)*233280;return v-Math.floor(v)};
+ for(i=0;i<N;i++){x=(i+.5)/N*W;var ty=H-A*Math.sin(x/1000*Math.PI*4),sy=ty+(rnd(i+1)-.5)*110;
+  var c=document.createElementNS(ns,'circle');c.setAttribute('cx',x);c.setAttribute('r',4);c.setAttribute('cy',sy);g.appendChild(c);cs.push({c:c,s:sy,t:ty})}
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function draw(p){cs.forEach(function(o){o.c.setAttribute('cy',o.s+(o.t-o.s)*p)})}
+ if(reduce){draw(1)}else{var t0=null;(function step(t){if(!t0)t0=t+600;var p=Math.max(0,Math.min(1,(t-t0)/1800));draw(1-Math.pow(1-p,3));if(p<1)requestAnimationFrame(step)})(0);requestAnimationFrame(function s(t){})}
+})();
+</script>
+</body>
+</html>
